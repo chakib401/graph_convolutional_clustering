@@ -33,7 +33,7 @@ adj, features, labels, n_classes = read_dataset(dataset)
 if n_clusters == 0: n_clusters = n_classes
 # Process the dataset
 tf_idf = (dataset == 'cora' or dataset == 'citeseer') # normalize binary word datasets
-norm_adj, features = preprocess_dataset(adj, features, tf_idf)
+norm_adj, features = preprocess_dataset(adj, features, tf_idf=tf_idf)
 
 # compute min_power matrix
 for power in range(1, min_power):
