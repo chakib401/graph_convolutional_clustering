@@ -57,6 +57,7 @@ python gcc/run.py --dataset=cora
 
 Please cite the following paper if you used GCC in your research
 
+```BibTeX
 @inproceedings{fettal2022efficient,
 author = {Fettal, Chakib and Labiod, Lazhar and Nadif, Mohamed},
 title = {Efficient Graph Convolution for Joint Node Representation Learning and Clustering},
@@ -66,3 +67,4 @@ doi = {10.1145/3488560.3498533},
 booktitle = {Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining},
 pages = {289–297},
 }
+```
