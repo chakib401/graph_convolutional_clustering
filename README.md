@@ -33,7 +33,7 @@ For `tune_power.py` parameters are the same except for `power` which is replaced
 | `max_power` | integer| `150`| Largest propagation order to test. |
 
 
-#### Optimal Orders
+#### Best Propagation Orders
 
 
 | Dataset        | Propagation order           |
@@ -53,3 +53,16 @@ To run the model on Cora for power `p=12` and have the average execution time
 ```bash
 python gcc/run.py --dataset=cora
 ```
+## Citation
+
+Please cite the following paper if you used GCC in your research
+
+@inproceedings{fettal2022efficient,
+author = {Fettal, Chakib and Labiod, Lazhar and Nadif, Mohamed},
+title = {Efficient Graph Convolution for Joint Node Representation Learning and Clustering},
+year = {2022},
+publisher = {Association for Computing Machinery},
+doi = {10.1145/3488560.3498533},
+booktitle = {Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining},
+pages = {289–297},
+}
