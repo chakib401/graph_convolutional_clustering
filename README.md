@@ -38,8 +38,8 @@ For `tune_power.py` parameters are the same except for `power` which is replaced
 
 | Dataset        | Propagation order           |
 | :-------------: |:-------------:|
-| `citeseer` | `12`|
-| `cora` | `5`|
+| `citeseer` | `5`|
+| `cora` | `12`|
 | `pubmed` | `150`|
 | `wiki` | `4`|
 
@@ -51,7 +51,7 @@ python gcc/tune_power.py --dataset=cora
 
 To run the model on Cora for power `p=12` and have the average execution time
 ```bash
-python gcc/run.py --dataset=cora
+python gcc/run.py --dataset=cora --power 12
 ```
 ## Citation
 
