@@ -1,6 +1,6 @@
 # Graph Convolutional Clustering
 
-This repository provides Python (Tensorflow) code to reproduce experiments from the WSDM '22 paper [*Efficient Graph Convolutional Representation Learning for Graph Clustering*](https://dl.acm.org/doi/10.1145/3488560.3498533).
+This repository provides Python (Tensorflow) code to reproduce experiments from the WSDM '22 paper [*Efficient Graph Convolution for Joint Node Representation Learning and Clustering*](https://dl.acm.org/doi/10.1145/3488560.3498533).
 
 <img src="./schematic.png">
 
