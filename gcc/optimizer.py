@@ -15,9 +15,8 @@ def update_rule_W(X, F, G):
 
 
 def update_rule_G(XW, F):
-    centroids_expanded = F[:, None, ...]
-    distances = tf.reduce_mean(tf.math.squared_difference(XW, centroids_expanded), 2)
-    G = tf.math.argmin(distances, 0, output_type=tf.dtypes.int32)
+    distances = tf.reduce_sum(XW**2, axis=1, keepdims=True) + tf.reduce_sum(F**2, axis=1) - 2 * XW @ tf.transpose(F)
+    G = tf.math.argmin(distances, 1, output_type=tf.dtypes.int32)
     return G
 
 
